@@ -49,7 +49,7 @@ export function SidebarDemo({ children }: { children: React.ReactNode }) {
   return (
     <div
       className={cn(
-        "mx-auto flex w-full flex-1 flex-col overflow-hidden rounded-md border bg-gray-100 md:flex-row  dark:bg-dark-bg",
+        "mx-auto flex w-full flex-1 flex-col overflow-hidden rounded-md border md:flex-row bg-dark-bg",
         "h-screen", 
       )}
     >
@@ -112,7 +112,7 @@ export const LogoIcon = () => {
 const Dashboard = ({ children } : {children: React.ReactNode}) => {
   return (
     <div className="flex flex-1">
-      <div className="flex h-full w-full flex-1 flex-col gap-2 rounded-tl-2xl border border-neutral-200 bg-white p-2 md:px-10 md:py-8 dark:border-neutral-700 dark:bg-neutral-900">
+      <div className="flex h-full w-full flex-1 flex-col gap-2 rounded-tl-2xl border border-neutral-200 p-2 md:px-10 md:py-8 border-neutral-700 bg-neutral-900">
       <LocalizationProvider dateAdapter={AdapterDateFns}>
       {children}
     </LocalizationProvider>
